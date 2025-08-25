@@ -3,21 +3,120 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inscrições - Cine Exib. 2025</title>
+        <link rel="icon" href="img/video-camera.png" />
         <link rel="stylesheet" href="style.css" />
-        <title>Formulario</title>
     </head>
     <body>
         <header>
-            <span class="logo">Exib.</span>
+            <a href="#" class="logo">Exib.</a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">INÍCIO</a></li>
                     <li><a href="#">SOBRE</a></li>
                     <li><a href="#">INFORMAÇÕES</a></li>
                 </ul>
             </nav>
         </header>
-        <main></main>
-        <footer></footer>
+        <main>
+            <div class="container">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>INSCRIÇÕES - CINE EXIB. 2025</legend>
+                        <div class="inputBox">
+                            <input type="text" name="nome" id="nome" class="inputUser" required>
+                            <label for="nome" class="labelInput">Nome Completo</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="email" id="email" class="inputUser" required>
+                            <label for="email" class="labelInput">E-mail</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" name="senha" id="senha" class="inputUser" required>
+                            <label for="senha" class="labelInput">Senha</label>
+                        </div>
+                        <div>
+                            <p>Gênero:</p>
+                            <div class="radio-option">
+                                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                                <label for="masculino">Masculino</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                                <label for="feminino">Feminino</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="nao-informar" name="genero" value="nao-informar" required>
+                                <label for="nao-informar">Prefiro não informar</label>
+                            </div>
+                        </div>
+                        <div class="data-container">
+                            <label for="data" class="data-label">Data de Nascimento:</label>
+                            <input type="date" name="data" id="data" required>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                            <label for="cidade" class="labelInput">Cidade</label>
+                        </div>
+                        <div>
+                            <label for="estado">Estado:</label>
+                            <select name="estado" id="estado" required>
+                                    <option value="" disabled selected>Selecione seu estado</option>
+                                    <option value="ac">Acre</option>
+                                    <option value="al">Alagoas</option>
+                                    <option value="ap">Amapá</option>
+                                    <option value="am">Amazonas</option>
+                                    <option value="ba">Bahia</option>
+                                    <option value="ce">Ceará</option>
+                                    <option value="df">Distrito Federal</option>
+                                    <option value="es">Espírito Santo</option>
+                                    <option value="go">Goiás</option>
+                                    <option value="ma">Maranhão</option>
+                                    <option value="mt">Mato Grosso</option>
+                                    <option value="ms">Mato Grosso do Sul</option>
+                                    <option value="mg">Minas Gerais</option>
+                                    <option value="pa">Pará</option>
+                                    <option value="pb">Paraíba</option>
+                                    <option value="pr">Paraná</option>
+                                    <option value="pe">Pernambuco</option>
+                                    <option value="pi">Piauí</option>
+                                    <option value="rj">Rio de Janeiro</option>
+                                    <option value="rn">Rio Grande do Norte</option>
+                                    <option value="rs">Rio Grande do Sul</option>
+                                    <option value="ro">Rondônia</option>
+                                    <option value="rr">Roraima</option>
+                                    <option value="sc">Santa Catarina</option>
+                                    <option value="sp">São Paulo</option>
+                                    <option value="se">Sergipe</option>
+                                    <option value="to">Tocantins</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Itens extras:</p>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="pipoca" name="extras[]" value="pipoca">
+                                <label for="pipoca">Pipoca</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="refrigerante" name="extras[]" value="refrigerante">
+                                <label for="refrigerante">Refrigerante</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="chocolate" name="extras[]" value="chocolate">
+                                <label for="chocolate">Chocolate</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="obs">Observações:</label>
+                            <textarea name="obs" id="obs" rows="3"></textarea>
+                        </div>
+                        <button type="submit" id="submit">Inscrever-se</button>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;2025 Cine Exib. - Todos os direitos reservados</p>
+        </footer>
     </body>
 </html>
