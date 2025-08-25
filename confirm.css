@@ -53,6 +53,15 @@ li, a {
     color: cornflowerblue;
 }
 
+.container {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.container img {
+    padding: 53px;
+}
+
 footer {
     background-color: #131316;
     border-top: solid white 5px;
